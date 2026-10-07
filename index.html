@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osteria Fiore | Cocina italiana en Santo Domingo</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-interno">
+      <a class="logo" href="#inicio">Osteria Fiore</a>
+
+      <button class="boton-navegacion" type="button" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navegacion" id="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="boton-carrito" type="button" aria-label="Abrir carrito">
+        Carrito
+        <span class="contador-carrito" id="contador-carrito">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="heroe" id="inicio">
+      <img src="img/hero.svg" alt="Mesa de trattoria con pasta y copas">
+      <div class="contenedor heroe-texto">
+        <p class="etiqueta">Trattoria en el Distrito Nacional</p>
+        <h1>Osteria Fiore</h1>
+        <p>Cocina italiana sencilla, mesa compartida y recetas de casa en Santo Domingo.</p>
+        <a class="boton boton-principal" href="#menu">Ver menú</a>
+      </div>
+    </section>
+
+    <section class="seccion" id="destacados">
+      <div class="contenedor">
+        <p class="etiqueta">De la casa</p>
+        <h2 class="titulo-seccion">Platos destacados</h2>
+        <div class="rejilla" id="lista-destacados"></div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-suave" id="menu">
+      <div class="contenedor">
+        <p class="etiqueta">Carta</p>
+        <h2 class="titulo-seccion">Menú</h2>
+        <p class="texto-apoyo">Filtra por categoría y agrega lo que quieras al carrito.</p>
+
+        <div class="filtros" role="group" aria-label="Filtrar menú">
+          <button class="boton-filtro activo" type="button" data-categoria="Todos">Todos</button>
+          <button class="boton-filtro" type="button" data-categoria="Entradas">Entradas</button>
+          <button class="boton-filtro" type="button" data-categoria="Pastas">Pastas</button>
+          <button class="boton-filtro" type="button" data-categoria="Pizzas">Pizzas</button>
+          <button class="boton-filtro" type="button" data-categoria="Postres">Postres</button>
+          <button class="boton-filtro" type="button" data-categoria="Bebidas">Bebidas</button>
+        </div>
+
+        <div class="rejilla" id="lista-productos"></div>
+      </div>
+    </section>
+
+    <section class="seccion" id="nosotros">
+      <div class="contenedor bloque-nosotros">
+        <img src="img/nosotros.svg" alt="Interior ilustrado de Osteria Fiore">
+        <div>
+          <p class="etiqueta">La casa</p>
+          <h2 class="titulo-seccion">Sobre nosotros</h2>
+          <p>Osteria Fiore es una trattoria ficticia imaginada para el Distrito Nacional. El concepto es cocina italiana de casa: pasta, pizza al horno y un menú corto para comer sin prisa.</p>
+          <p>La propuesta reúne recetas conocidas de Italia con un ambiente cálido, pensado para familias, amigos y visitas en Santo Domingo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-suave" id="contacto">
+      <div class="contenedor">
+        <p class="etiqueta">Visítanos</p>
+        <h2 class="titulo-seccion">Contacto</h2>
+        <div class="rejilla-info">
+          <article class="tarjeta-info">
+            <h3>Dirección</h3>
+            <p>Calle Los Jazmines No. 27, Gazcue<br>Distrito Nacional, Santo Domingo<br>República Dominicana</p>
+          </article>
+          <article class="tarjeta-info">
+            <h3>Teléfono y correo</h3>
+            <p>(809) 555-1842<br>hola@osteriafiore.com</p>
+          </article>
+          <article class="tarjeta-info">
+            <h3>Redes</h3>
+            <p>@osteriafiore<br>facebook.com/osteriafiore</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-interno">
+      <strong>Osteria Fiore</strong>
+      <p>Restaurante ficticio creado para un proyecto universitario de diseño web.</p>
+    </div>
+  </footer>
+
+  <div class="fondo-carrito" id="fondo-carrito"></div>
+  <aside class="panel-carrito" id="panel-carrito" aria-label="Carrito de pedidos">
+    <div class="panel-encabezado">
+      <h2>Tu carrito</h2>
+      <button class="boton-cerrar" type="button" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="lista-carrito" id="lista-carrito"></div>
+    <div class="panel-total">
+      <p>Total: <strong id="total-carrito">RD$0</strong></p>
+    </div>
+  </aside>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
