@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img">
+  <rect width="640" height="420" fill="#f6f0e6"/>
+  <circle cx="320" cy="200" r="92" fill="none" stroke="#7a2e2e" stroke-width="8"/>
+  <text x="320" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#7a2e2e">OF</text>
+  <text x="320" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#2a1c14">Osteria Fiore</text>
+</svg>
